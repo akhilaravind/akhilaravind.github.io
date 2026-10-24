@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import portfolioData from '@/data/portfolio.json';
 import { AppLayout } from '@/components/AppLayout';
+import { getAssetPath } from '@/utils/asset';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -207,9 +208,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`} data-scroll-behavior="smooth">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href={getAssetPath('/favicon.svg')} type="image/svg+xml" />
+        <link rel="alternate icon" href={getAssetPath('/favicon.ico')} sizes="any" />
+        <link rel="apple-touch-icon" href={getAssetPath('/apple-touch-icon.png')} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

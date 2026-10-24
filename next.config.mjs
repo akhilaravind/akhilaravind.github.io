@@ -1,9 +1,24 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const isGithubActions = !!process.env.GITHUB_ACTIONS;
+let repoBasePath = '';
+if (isGithubActions && process.env.GITHUB_REPOSITORY) {
+  const repoName = process.env.GITHUB_REPOSITORY.split('/')[1] || '';
+  if (repoName && !repoName.endsWith('.github.io')) {
+    repoBasePath = `/${repoName}`;
+  }
+}
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH !== undefined
+  ? process.env.NEXT_PUBLIC_BASE_PATH
+  : repoBasePath;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   ...(basePath ? { basePath } : {}),
+  assetPrefix: basePath ? `${basePath}/` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,

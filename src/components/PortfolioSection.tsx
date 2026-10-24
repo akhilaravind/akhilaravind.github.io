@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { PortfolioData } from '@/types/portfolio';
+import { getAssetPath } from '@/utils/asset';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import { ScrollReveal } from '@/components/common/ScrollReveal';
 import { SectionBackgroundMesh } from '@/components/common/SectionBackgroundMesh';
@@ -69,7 +70,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ portfolio, h
               {project.image ? (
                 <div className="h-48 w-full relative overflow-hidden bg-slate-100 border-b border-[#F0F0F6]">
                   <Image
-                    src={project.image}
+                    src={getAssetPath(project.image)}
                     alt={project.name}
                     fill
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ProfileData } from '@/types/portfolio';
+import { getAssetPath } from '@/utils/asset';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { ScrollReveal } from '@/components/common/ScrollReveal';
 import { SectionBackgroundMesh } from '@/components/common/SectionBackgroundMesh';
@@ -130,7 +131,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
               {/* Developer Hero Portrait */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl bg-white border-4 border-white">
                 <Image
-                  src={profile.heroImage}
+                  src={getAssetPath(profile.heroImage)}
                   alt={`${profile.name} - ${profile.headline}`}
                   fill
                   priority

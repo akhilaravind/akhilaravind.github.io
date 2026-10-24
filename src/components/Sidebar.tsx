@@ -7,6 +7,7 @@ import { ProgressBar } from '@/components/common/ProgressBar';
 import { IconRenderer } from '@/components/common/IconRenderer';
 import { Check, Download } from 'lucide-react';
 import { triggerPdfDownload } from '@/utils/download';
+import { getAssetPath } from '@/utils/asset';
 
 interface SidebarProps {
   profile: ProfileData;
@@ -107,7 +108,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ profile, skills }) => {
         <div className="relative mb-3">
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#F0F0F6] shadow-md relative bg-amber-50">
             <Image
-              src={profile.avatar}
+              src={getAssetPath(profile.avatar)}
               alt={profile.name}
               fill
               className="object-cover"

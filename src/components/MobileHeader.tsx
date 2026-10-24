@@ -8,6 +8,7 @@ import { Menu, X, Download } from 'lucide-react';
 import { NavigationItem, ProfileData } from '@/types/portfolio';
 import { IconRenderer } from '@/components/common/IconRenderer';
 import { triggerPdfDownload } from '@/utils/download';
+import { getAssetPath } from '@/utils/asset';
 
 interface MobileHeaderProps {
   profile: ProfileData;
@@ -24,7 +25,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ profile, navigation 
         <Link href="/" className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full overflow-hidden relative border-2 border-[#FFB400]">
             <Image
-              src={profile.avatar}
+              src={getAssetPath(profile.avatar)}
               alt={profile.name}
               fill
               className="object-cover"
