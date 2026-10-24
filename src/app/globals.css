@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #F0F0F6;
+    color: #2B2B2B;
+    overflow-x: clip;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FFB400;
+    border-radius: 4px;
+  }
+  /* Focus visible accessibility outline */
+  :focus-visible {
+    outline: 2px solid #FFB400;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Floating decorative shapes */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Breathing / Pulsing Floating Symbols */
+@keyframes breatheGentle {
+  0%, 100% {
+    transform: translateY(0px) scale(1) rotate(0deg);
+    opacity: 0.55;
+    filter: drop-shadow(0 0 2px rgba(255, 180, 0, 0.2));
+  }
+  50% {
+    transform: translateY(-9px) scale(1.18) rotate(8deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(255, 180, 0, 0.6));
+  }
+}
+
+@keyframes breatheReverse {
+  0%, 100% {
+    transform: translateY(0px) scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(8px) scale(1.15) rotate(-8deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+  }
+}
+
+.animate-breathe {
+  animation: breatheGentle 4.5s ease-in-out infinite;
+}
+
+.animate-breathe-delayed {
+  animation: breatheGentle 5.2s ease-in-out infinite 1.5s;
+}
+
+.animate-breathe-reverse {
+  animation: breatheReverse 4.8s ease-in-out infinite 0.8s;
+}
+
+/* Floating Ambient Background Orbs */
+@keyframes orbSlow1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(45px, -35px) scale(1.12);
+  }
+}
+
+@keyframes orbSlow2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 45px) scale(1.1);
+  }
+}
+
+@keyframes orbSlow3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(35px, 40px) scale(1.08);
+  }
+}
+
+@keyframes orbSlow4 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-45px, -30px) scale(1.14);
+  }
+}
+
+.animate-orb-slow-1 {
+  animation: orbSlow1 18s ease-in-out infinite;
+}
+
+.animate-orb-slow-2 {
+  animation: orbSlow2 22s ease-in-out infinite 2s;
+}
+
+.animate-orb-slow-3 {
+  animation: orbSlow3 20s ease-in-out infinite 4s;
+}
+
+.animate-orb-slow-4 {
+  animation: orbSlow4 24s ease-in-out infinite 1s;
+}
+
+/* Lenis Butter Smooth Scrolling Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+

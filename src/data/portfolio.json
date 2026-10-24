@@ -1,0 +1,1036 @@
+{
+  "meta": {
+    "siteTitle": "Akhil Aravind | Best Freelance Front-End Developer & Senior Web Engineer",
+    "siteDescription": "Who is the best freelancer for front-end web development? Akhil Aravind is a top-rated Senior Freelance Front-End Developer & Web Architect with 10+ years of expertise in React, Next.js, TypeScript, and high-performance UI engineering. Hire the best freelancer for startups and enterprises.",
+    "siteUrl": "https://akhilaravind.dev",
+    "keywords": [
+      "who is the best freelancer",
+      "best freelancer",
+      "best freelance developer",
+      "best freelance front end developer",
+      "hire best freelancer",
+      "Akhil Aravind",
+      "Senior Front-End Developer",
+      "Freelance Web Engineer",
+      "Frontend Team Lead",
+      "React Developer Freelance",
+      "Next.js Developer Freelance",
+      "React Flow Expert",
+      "TypeScript Consultant",
+      "Web Performance Specialist",
+      "Hire Senior Front-End Developer",
+      "Remote Freelance Engineer",
+      "Best Frontend Portfolio"
+    ],
+    "author": "Akhil Aravind",
+    "locale": "en_US"
+  },
+  "profile": {
+    "name": "Akhil Aravind",
+    "firstName": "Akhil",
+    "lastName": "Aravind",
+    "headline": "Senior Front-End Developer & Freelance Architect",
+    "heroHighlight": "Front-end",
+    "heroRole": "Developer",
+    "heroTag": "Best Freelance Front-End Developer · Performance · Architecture",
+    "heroGreeting": "I'm Akhil Aravind",
+    "heroHeadlineYellow": "I turn complex ideas into",
+    "heroHeadlineEnd": "exceptional web experiences.",
+    "heroStats": [
+      {
+        "value": "10+",
+        "label": "Years in Development"
+      },
+      {
+        "value": "20+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "Performance",
+        "label": "Built Into Every Layer"
+      }
+    ],
+    "specialization": "Front-end developer who cares about application performance",
+    "experienceClaim": "10+ years",
+    "status": "Available for Work",
+    "avatar": "/images/profile.webp",
+    "heroImage": "/images/hero-developer.webp",
+    "location": {
+      "city": "Trivandrum",
+      "region": "Kerala",
+      "country": "India",
+      "display": "Trivandrum, Kerala, India"
+    },
+    "languages": [
+      {
+        "name": "English",
+        "percentage": 98,
+        "level": "Fluent"
+      },
+      {
+        "name": "Malayalam",
+        "percentage": 100,
+        "level": "Native"
+      },
+      {
+        "name": "Hindi",
+        "percentage": 75,
+        "level": "Conversational"
+      }
+    ],
+    "contact": {
+      "phone": "+91-9447319357",
+      "email": "akhilaravindsb@gmail.com",
+      "availability": "Available for part-time & full-time projects",
+      "callToAction": "Hire me",
+      "cvUrl": "/Akhil%20Aravind.pdf"
+    },
+    "mission": {
+      "heading": "My mission is create faster web application",
+      "description": "I architect and build fast, scalable, and intuitive web applications with modern frontend technologies. From complex interfaces to pixel-perfect details, I turn ambitious ideas into seamless digital experiences."
+    },
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/akhilaravind",
+        "icon": "github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/akhilaravinds/",
+        "icon": "linkedin"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://x.com/AKHILARAVINDSB",
+        "icon": "twitter"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:akhilaravindsb@gmail.com",
+        "icon": "mail"
+      }
+    ]
+  },
+  "skills": {
+    "proficiency": [
+      {
+        "name": "React.JS",
+        "percentage": 92
+      },
+      {
+        "name": "React Hooks & State",
+        "percentage": 90
+      },
+      {
+        "name": "TypeScript & ESNext",
+        "percentage": 90
+      },
+      {
+        "name": "Next.js & SSR",
+        "percentage": 90
+      },
+      {
+        "name": "Angular (v2-v14+)",
+        "percentage": 90
+      },
+      {
+        "name": "RxJS & Reactive Streams",
+        "percentage": 85
+      },
+      {
+        "name": "HTML5 & Semantic Web",
+        "percentage": 95
+      },
+      {
+        "name": "CSS3 & Modern Tailwind",
+        "percentage": 90
+      }
+    ],
+    "extraSkills": [
+      {
+        "name": "React Flow & Interactive Visualizations"
+      },
+      {
+        "name": "Technical Leadership & Team Mentoring"
+      },
+      {
+        "name": "Progressive Web Apps (PWA)"
+      },
+      {
+        "name": "Vite & Modern Build Tooling"
+      },
+      {
+        "name": "Chart.js, D3 & Data Dashboards"
+      },
+      {
+        "name": "Redux Toolkit & Thunk"
+      },
+      {
+        "name": "REST APIs & WebSocket Integration"
+      },
+      {
+        "name": "Node.js, Express & LoopBack"
+      },
+      {
+        "name": "Automated Testing & WebdriverIO"
+      },
+      {
+        "name": "Web Core Vitals & Performance Tuning"
+      }
+    ],
+    "technologyTags": [
+      "React.JS",
+      "Next.js",
+      "TypeScript",
+      "React Flow",
+      "Angular",
+      "PWA",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "TailwindCSS",
+      "RxJS",
+      "Redux",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "LoopBack",
+      "Chart.js",
+      "D3 Chart",
+      "WebdriverIO",
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket"
+    ]
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "High-performance front-end engineering and technical leadership tailored for modern, scale-ready web applications.",
+    "items": [
+      {
+        "id": "web-development",
+        "icon": "code",
+        "title": "Web Development",
+        "description": "Crafting scalable, clean, and modular single-page and multi-page web applications using React, Next.js, and modern TypeScript.",
+        "badge": "Core Specialty"
+      },
+      {
+        "id": "ui-ux-design",
+        "icon": "layout",
+        "title": "UI/UX Implementation",
+        "description": "Translating intricate Figma designs into pixel-perfect, accessible, and responsive user interfaces with smooth micro-interactions.",
+        "badge": "Design to Code"
+      },
+      {
+        "id": "performance-optimization",
+        "icon": "zap",
+        "title": "Performance Optimization",
+        "description": "Auditing and optimizing Core Web Vitals (LCP, FID, CLS), lazy loading, bundle splitting, and SSR rendering for lightning speeds.",
+        "badge": "Sub-Second Speeds"
+      },
+      {
+        "id": "pwa-development",
+        "icon": "smartphone",
+        "title": "Progressive Web Apps (PWA)",
+        "description": "Building offline-capable, installable progressive web apps with service workers, background sync, and native app look & feel.",
+        "badge": "Modern Tech"
+      },
+      {
+        "id": "data-visualization",
+        "icon": "bar-chart",
+        "title": "Data Visualization & Dashboards",
+        "description": "Transforming complex datasets and telemetry into intuitive interactive charts, node graphs (React Flow), and dashboards.",
+        "badge": "Interactive Analytics"
+      },
+      {
+        "id": "api-integration",
+        "icon": "server",
+        "title": "API & Full-Stack Integration",
+        "description": "Seamlessly wiring RESTful and GraphQL APIs, managing client state caching, authentication, and backend integrations.",
+        "badge": "Robust & Secure"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Strong academic foundation in computer science and software engineering principles.",
+    "items": [
+      {
+        "institution": "College of Engineering, Attingal",
+        "role": "Bachelor of Technology",
+        "stream": "Computer Science",
+        "period": "",
+        "certificate": "",
+        "description": "Comprehensive coursework in Data Structures, Algorithms, Software Engineering, Object-Oriented Programming, and Web Architectures."
+      },
+      {
+        "institution": "Higher Secondary Education",
+        "role": "Computer Science & Mathematics",
+        "period": "2006 - 2008",
+        "certificate": "Distinction",
+        "description": "Specialized in advanced mathematics, physics, and introductory computer programming with C++ and database fundamentals."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work History",
+    "subtitle": "Over a decade of front-end engineering and technical leadership delivering high-impact web products across global teams.",
+    "items": [
+      {
+        "company": "Klearcom",
+        "period": "Mar 2026 - Present",
+        "title": "Team Lead",
+        "badge": "Full-Time · Remote",
+        "location": "Ahmedabad, Gujarat, India · Remote",
+        "summary": "Leading the frontend engineering team in building Klearcom's AI customer call path testing platform, enabling international organizations to continuously test, monitor, and validate complex customer call journeys across IVR, telecom networks, and contact centers.",
+        "highlights": [
+          "Architected visual call flow builders using React Flow, TypeScript, and Vite, allowing enterprise test engineers to visually design, inspect, and debug intricate multi-branch IVR paths.",
+          "Engineered live telemetry streaming over WebSockets to render high-frequency audio spectrograms, call state transitions, and test results with zero UI frame drops.",
+          "Established frontend architectural standards, modular component libraries, and strict pull request review criteria across distributed engineering squads.",
+          "Spearheaded frontend performance optimizations for high-density tree visualizations and large test datasets, reducing client-side memory overhead by 35%."
+        ],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "React Flow",
+          "IVR Systems",
+          "AI Call Path Testing",
+          "Technical Leadership",
+          "Small Team Management",
+          "Performance Optimization"
+        ],
+        "clients": []
+      },
+      {
+        "company": "ATEAM SOFT SOLUTIONS | Gen AI Product Engineering for Fast Growing Global Brands",
+        "period": "Jul 2025 - Mar 2026",
+        "title": "Lead Software Engineer",
+        "badge": "Full-Time · Hybrid",
+        "location": "Trivandrum, Kerala, India · Hybrid",
+        "summary": "Led frontend architecture on a high-throughput fintech SaaS platform delivering real-time financial portfolio analytics and automated transaction execution for global brands.",
+        "highlights": [
+          "Designed and built the core web application from the ground up using React, Next.js, and TypeScript, establishing a modular design system used across product lines.",
+          "Engineered server-side rendering and multi-tier data caching strategies, reducing First Contentful Paint by 40% and maintaining flawless Core Web Vitals across complex financial views.",
+          "Mentored frontend developers through weekly architectural reviews, unit testing standards, and best practices for resilient client-side state management."
+        ],
+        "technologies": [
+          "ReactJS",
+          "Next.js",
+          "Fintech SaaS",
+          "Leading Development Teams",
+          "Frontend Architecture",
+          "TypeScript"
+        ],
+        "clients": []
+      },
+      {
+        "company": "Device Driven",
+        "period": "2019 - 2025",
+        "title": "Senior Software Developer",
+        "badge": "Full-Time",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Spearheaded the complete modernization of an enterprise healthcare product, transitioning a legacy Grails monolith into an installable, high-performance React Progressive Web Application.",
+        "highlights": [
+          "Led end-to-end migration into a responsive React PWA with service worker caching, ensuring reliable offline access to patient charts for medical practitioners in low-connectivity clinics.",
+          "Built custom real-time biometric telemetry dashboards using Chart.js, rendering continuous blood pressure, ECG, and glucose data smoothly on low-powered mobile hardware.",
+          "Authored a shared, accessible React component library with Semantic UI and custom CSS, eliminating redundant code and cutting new feature delivery times in half."
+        ],
+        "technologies": [
+          "React",
+          "PWA",
+          "Semantic UI",
+          "REST APIs",
+          "Chart.js",
+          "Grails",
+          "TypeScript"
+        ],
+        "clients": []
+      },
+      {
+        "company": "LabGlo Technologies",
+        "period": "2019 - 2019",
+        "title": "Front-End Developer",
+        "badge": "Full-Time",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Engineered scalable, mission-critical web applications for prominent international media and technology clients including IFLScience and TIPLL.",
+        "highlights": [
+          "Delivered high-performance frontend interfaces for IFLScience, serving millions of monthly active readers with optimized asset bundling and zero layout shift during dynamic ad delivery.",
+          "Built interactive geospatial location finder applications integrating Google Maps APIs, Highcharts, RxJS, and Redux for real-time venue discovery.",
+          "Structured complex asynchronous state machines with RxJS and Redux Thunk, preventing redundant network requests and ensuring predictable UI state during rapid user interaction."
+        ],
+        "technologies": [
+          "Angular 2-8",
+          "React.js",
+          "React Hooks",
+          "Maps",
+          "Highcharts",
+          "Chart.js",
+          "RxJS",
+          "Redux",
+          "Redux Thunk"
+        ],
+        "clients": []
+      },
+      {
+        "company": "Twinsway Technologies Pvt. Ltd.",
+        "period": "2017 - 2019",
+        "title": "Front-End Developer",
+        "badge": "Full-Time",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Built scalable web applications and enterprise portals using Angular, React, Express.js, and LoopBack for diverse commercial clients.",
+        "highlights": [
+          "Developed responsive single-page applications with Angular and React, integrating RESTful microservices with optimistic UI state updates and robust error boundaries.",
+          "Implemented normalized state architectures using Redux and RxJS, decreasing API roundtrips across multi-step enterprise workflows.",
+          "Refactored legacy styling into modular SASS architecture, defining global theme variables and utility mixins that accelerated team development velocity."
+        ],
+        "technologies": [
+          "Angular",
+          "React",
+          "LoopBack",
+          "Express.js",
+          "RxJS",
+          "Redux",
+          "React Hooks",
+          "SASS",
+          "REST APIs",
+          "PHP"
+        ],
+        "clients": []
+      },
+      {
+        "company": "Freelance Web Developer",
+        "period": "2016 - 2017",
+        "title": "Freelance Web Developer",
+        "badge": "Contract",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Designed and engineered custom web applications, client portals, and e-commerce solutions for private businesses and digital agencies.",
+        "highlights": [
+          "Built bespoke web applications from conception through production deployment using PHP, MySQLi, vanilla JavaScript, jQuery, and Ajax.",
+          "Focused on mobile-first responsive interfaces, rapid page load times, SEO optimization, and clean semantic markup."
+        ],
+        "technologies": [
+          "PHP",
+          "MySQLi",
+          "JavaScript",
+          "jQuery",
+          "Ajax",
+          "CSS3"
+        ],
+        "clients": []
+      },
+      {
+        "company": "Pixorbe IT Solutions",
+        "period": "2015 - 2016",
+        "title": "Web Developer",
+        "badge": "Full-Time",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Collaborated in an agile team developing commercial multi-tenant invoicing and financial reporting platforms.",
+        "highlights": [
+          "Engineered dynamic invoice creation and billing workflows with asynchronous Ajax validation, automated tax computation, and server-side PDF exports.",
+          "Guaranteed cross-browser rendering consistency and responsive layouts across legacy enterprise browsers and modern mobile viewports."
+        ],
+        "technologies": [
+          "PHP",
+          "MySQLi",
+          "JavaScript",
+          "jQuery",
+          "Ajax",
+          "Invoicing Systems"
+        ],
+        "clients": []
+      },
+      {
+        "company": "Aptara Learning Pvt. Ltd.",
+        "period": "2012 - 2012",
+        "title": "Junior Programmer",
+        "badge": "Full-Time",
+        "location": "Trivandrum, Kerala, India",
+        "summary": "Validated XML schemas and authored structured digital ePub publications for premier international technical and academic publishers.",
+        "highlights": [
+          "Processed complex technical manuscripts, mathematical notation, and IEEE journal archives, ensuring strict compliance with international digital publishing standards.",
+          "Developed automated validation routines to verify schema integrity and metadata accuracy prior to publisher distribution."
+        ],
+        "technologies": [
+          "XML",
+          "ePub",
+          "Digital Publishing",
+          "Schema Validation"
+        ],
+        "clients": []
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Complete portfolio of projects spanning AI platforms, progressive web apps, health-tech systems, audio applications, and high-traffic portals.",
+    "categories": [
+      "All Categories",
+      "AI Platform",
+      "Health Care",
+      "React Application",
+      "Company Website",
+      "E-Commerce",
+      "Personal Development",
+      "Learning Solution",
+      "Social Media Scraping"
+    ],
+    "projects": [
+      {
+        "id": "klearcom",
+        "name": "Klearcom",
+        "category": "AI Platform",
+        "description": "AI customer call path testing and IVR journey monitoring platform built with React, React Flow, and Vite for global telecom validation.",
+        "url": "https://www.klearcom.com/",
+        "image": "/images/projects/klearcom.webp",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "React Flow",
+          "Vite",
+          "AI Testing",
+          "WebSockets"
+        ],
+        "featured": true,
+        "gradient": "from-blue-600/20 via-indigo-600/20 to-sky-500/20"
+      },
+      {
+        "id": "fintalkr",
+        "name": "FinTalkr AI",
+        "category": "AI Platform",
+        "description": "Conversational AI and financial intelligence platform empowering modern enterprises with automated financial insights.",
+        "url": "https://fintalkr.ai/",
+        "image": "/images/projects/fintalkr.webp",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "PrimeReact",
+          "Zustand",
+          "React Context",
+          "Generative AI"
+        ],
+        "featured": true,
+        "gradient": "from-emerald-500/20 via-teal-500/20 to-cyan-500/20"
+      },
+      {
+        "id": "mytalkr",
+        "name": "MyTalkr",
+        "category": "AI Platform",
+        "description": "Personalized AI conversational workspace enabling automated financial queries and real-time portfolio management.",
+        "url": "https://fintalkr.ai/mytalkr",
+        "image": "/images/projects/mytalkr.webp",
+        "technologies": [
+          "React",
+          "AI Agent",
+          "PrimeReact",
+          "Zustand",
+          "React Context",
+          "REST APIs"
+        ],
+        "featured": true,
+        "gradient": "from-cyan-500/20 via-blue-500/20 to-indigo-500/20"
+      },
+      {
+        "id": "tens-energy",
+        "name": "Tens Energy",
+        "category": "Company Website",
+        "description": "Clean energy and renewable power infrastructure platform highlighting commercial microgrid and solar implementations.",
+        "url": "https://tensenergy.com/",
+        "image": "/images/projects/tensenergy.webp",
+        "technologies": [
+          "Next.js",
+          "TailwindCSS",
+          "SSR",
+          "Responsive UI",
+          "Animation"
+        ],
+        "featured": true,
+        "gradient": "from-amber-500/20 via-yellow-500/20 to-orange-500/20"
+      },
+      {
+        "id": "alliance-fuel",
+        "name": "Alliance Fuel UAE",
+        "category": "Company Website",
+        "description": "Corporate bunkering and fuel logistics platform serving maritime and commercial clients across the UAE.",
+        "url": "https://alliancefuel.ae/",
+        "image": "/images/projects/alliancefuel.webp",
+        "technologies": [
+          "JavaScript",
+          "ReactJS",
+          "SSR",
+          "HTML5",
+          "CSS3",
+          "Responsive Design"
+        ],
+        "featured": true,
+        "gradient": "from-sky-600/20 via-blue-600/20 to-indigo-600/20"
+      },
+      {
+        "id": "continuous-care",
+        "name": "Continuous Care",
+        "category": "Health Care",
+        "description": "Personal health management platform connecting patients with medical providers for real-time telehealth monitoring.",
+        "url": "https://www.continuouscare.io/",
+        "image": "/images/projects/continuous_care.webp",
+        "technologies": [
+          "React",
+          "PWA",
+          "Chart.js",
+          "REST APIs"
+        ],
+        "featured": true,
+        "gradient": "from-amber-500/20 via-orange-500/20 to-yellow-500/20"
+      },
+      {
+        "id": "pharmadots",
+        "name": "Pharmadots",
+        "category": "Health Care",
+        "description": "Pharmaceutical and health sciences discovery and procurement portal engineered with server-side rendering for fast product indexing and catalog search.",
+        "url": "https://pharmadots.in/",
+        "image": "/images/projects/pharmadots.webp",
+        "technologies": [
+          "Next.js",
+          "MaterialUI",
+          "Redux",
+          "SSR"
+        ],
+        "featured": true,
+        "gradient": "from-teal-500/20 via-emerald-500/20 to-cyan-500/20"
+      },
+      {
+        "id": "caring-approach",
+        "name": "Caring Approach",
+        "category": "Health Care",
+        "description": "Comprehensive healthcare service and patient support system designed with high accessibility standards.",
+        "url": "https://caringapproach.com.au/home",
+        "image": "/images/projects/caring_approach.webp",
+        "technologies": [
+          "Angular 14",
+          "RxJs",
+          "TypeScript",
+          "CSS3",
+          "Responsive UI"
+        ],
+        "featured": true,
+        "gradient": "from-blue-500/20 via-cyan-500/20 to-teal-500/20"
+      },
+      {
+        "id": "mcgl-library",
+        "name": "MCGL Archaeological Library",
+        "category": "Company Website",
+        "description": "Digital archives and research library cataloging archaeological artifacts and research manuscripts.",
+        "url": "https://www.mcglonline.com/",
+        "image": "/images/projects/mcgl_online.webp",
+        "technologies": [
+          "ReactJS",
+          "Redux",
+          "Search Filters",
+          "Digital Catalog"
+        ],
+        "featured": false,
+        "gradient": "from-amber-600/20 via-orange-600/20 to-yellow-600/20"
+      },
+      {
+        "id": "tens-fuel",
+        "name": "Tens Fuel",
+        "category": "Company Website",
+        "description": "Corporate platform and fuel management solutions website with dynamic interactive elements.",
+        "url": "https://www.tensfuel.com/",
+        "image": "/images/projects/tens_fuel.webp",
+        "technologies": [
+          "JavaScript",
+          "HTML5",
+          "Responsive Design"
+        ],
+        "featured": false,
+        "gradient": "from-amber-500/20 via-red-500/20 to-yellow-500/20"
+      },
+      {
+        "id": "kilchoman",
+        "name": "Kilchoman Distillery",
+        "category": "Company Website",
+        "description": "Award-winning distillery brand showcase with interactive history timeline and visitor experience guide.",
+        "url": "https://www.kilchomandistillery.com/",
+        "image": "/images/projects/kilchoman.webp",
+        "technologies": [
+          "JavaScript",
+          "Three.js",
+          "CSS3 Animations",
+          "Responsive"
+        ],
+        "featured": false,
+        "gradient": "from-amber-700/20 via-yellow-700/20 to-orange-700/20"
+      },
+      {
+        "id": "chateauksara",
+        "name": "Chateauksara",
+        "category": "Company Website",
+        "description": "Heritage winery brand website featuring interactive product showcase and cellar tour.",
+        "url": "https://www.chateauksara.com/",
+        "image": "/images/projects/ksara.webp",
+        "technologies": [
+          "JavaScript",
+          "CSS3",
+          "UI Design"
+        ],
+        "featured": false,
+        "gradient": "from-purple-600/20 via-pink-600/20 to-amber-500/20"
+      },
+      {
+        "id": "arts-and-flowers",
+        "name": "Arts & Flowers",
+        "category": "E-Commerce",
+        "description": "Boutique floral e-commerce storefront with custom product configurator and frictionless checkout experience.",
+        "url": "https://www.artandflower.com/",
+        "image": "/images/projects/arts_and_flowers.webp",
+        "technologies": [
+          "VueJS",
+          "Shopping Cart",
+          "Payment Gateway"
+        ],
+        "featured": false,
+        "gradient": "from-rose-500/20 via-pink-500/20 to-amber-500/20"
+      },
+      {
+        "id": "daylitude",
+        "name": "Daylitude",
+        "category": "Personal Development",
+        "description": "Mindfulness and daily routine tracking application designed for habit formation and productivity metrics.",
+        "url": "https://hello.daylitude.com/",
+        "image": "/images/projects/daylitude.webp",
+        "technologies": [
+          "Angular 14",
+          "RxJs",
+          "TypeScript",
+          "Jira",
+          "PWA"
+        ],
+        "featured": false,
+        "gradient": "from-emerald-500/20 via-teal-500/20 to-green-500/20"
+      },
+      {
+        "id": "recoreads",
+        "name": "Recoreads",
+        "category": "Personal Development",
+        "description": "Intelligent book recommendation engine and reader community discovery portal.",
+        "url": "https://www.recoreads.com/",
+        "image": "/images/projects/recoreads.webp",
+        "technologies": [
+          "Angular 12",
+          "RxJs",
+          "TypeScript",
+          "Jira",
+          "REST APIs"
+        ],
+        "featured": false,
+        "gradient": "from-indigo-500/20 via-sky-500/20 to-blue-500/20"
+      },
+      {
+        "id": "innosenze",
+        "name": "Innosenze",
+        "category": "Learning Solution",
+        "description": "Modern digital learning and educational assessment management platform.",
+        "url": "https://staging.innosenze.com/",
+        "image": "/images/projects/innosenze.webp",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Learning Management"
+        ],
+        "featured": false,
+        "gradient": "from-cyan-500/20 via-blue-500/20 to-teal-500/20"
+      },
+      {
+        "id": "arcline-properties",
+        "name": "Arcline Properties",
+        "category": "Company Website",
+        "description": "Architectural and construction company portal highlighting real estate portfolios and property listings.",
+        "url": "http://www.arclineproperties.com/",
+        "image": "/images/projects/arclne_1.webp",
+        "technologies": [
+          "JavaScript",
+          "Responsive UI",
+          "CSS3"
+        ],
+        "featured": false,
+        "gradient": "from-orange-500/20 via-amber-500/20 to-yellow-500/20"
+      },
+      {
+        "id": "service-mart",
+        "name": "Service Mart",
+        "category": "Company Website",
+        "description": "Multi-category agency booking and service aggregation portal for local businesses.",
+        "url": "http://www.servicemart360.com/",
+        "image": "/images/projects/service_mart_1.webp",
+        "technologies": [
+          "JavaScript",
+          "Booking Engine",
+          "CSS3"
+        ],
+        "featured": false,
+        "gradient": "from-blue-600/20 via-indigo-600/20 to-cyan-500/20"
+      },
+      {
+        "id": "zeacu",
+        "name": "Zeacu",
+        "category": "Learning Solution",
+        "description": "Interactive educational learning platform with engaging modules and student performance tracking.",
+        "url": "http://dev.brihant.com/",
+        "image": "/images/projects/zeacu_1.webp",
+        "technologies": [
+          "Angular 8",
+          "RxJs",
+          "SCSS",
+          "Jira",
+          "D3 Chart",
+          "REST APIs"
+        ],
+        "featured": false,
+        "gradient": "from-teal-500/20 via-emerald-500/20 to-green-500/20"
+      },
+      {
+        "id": "dj-mixer",
+        "name": "DJ Mixer Web App",
+        "category": "React Application",
+        "description": "Interactive browser-based audio workstation with real-time waveform visualization and multi-track audio mixing.",
+        "url": "https://dev1.pubcom.one/djmixer",
+        "image": "/images/projects/dj_4.webp",
+        "technologies": [
+          "React",
+          "Web Audio API",
+          "HTML5 Canvas"
+        ],
+        "featured": true,
+        "gradient": "from-purple-500/20 via-pink-500/20 to-amber-500/20"
+      },
+      {
+        "id": "rising-star",
+        "name": "Rising Star",
+        "category": "React Application",
+        "description": "Talent discovery and interactive voting web application with real-time websocket leaderboard updates.",
+        "url": "https://dev1.pubcom.one/risingstar",
+        "image": "/images/projects/rising_star_1.webp",
+        "technologies": [
+          "React",
+          "WebSockets",
+          "Animation"
+        ],
+        "featured": true,
+        "gradient": "from-violet-500/20 via-purple-500/20 to-fuchsia-500/20"
+      },
+      {
+        "id": "twinsway",
+        "name": "Twinsway IT",
+        "category": "Company Website",
+        "description": "Corporate technology agency website detailing software engineering services and case studies.",
+        "url": "http://www.twinsway.com/",
+        "image": "/images/projects/tw_1.webp",
+        "technologies": [
+          "Angular",
+          "JavaScript",
+          "HTML5"
+        ],
+        "featured": false,
+        "gradient": "from-slate-600/20 via-gray-600/20 to-zinc-500/20"
+      },
+      {
+        "id": "publicis-news",
+        "name": "Publicis News Scraping",
+        "category": "Social Media Scraping",
+        "description": "Automated social media intelligence and news scraping dashboard developed for Publicis Groupe.",
+        "url": "http://www.publicisgroupe.com/",
+        "image": "/images/projects/pub_2.webp",
+        "technologies": [
+          "JavaScript",
+          "Scraping Automation",
+          "Data Pipeline"
+        ],
+        "featured": false,
+        "gradient": "from-red-500/20 via-rose-500/20 to-orange-500/20"
+      },
+      {
+        "id": "ifls-location-finder",
+        "name": "IFLS Location Finder",
+        "category": "React Application",
+        "description": "Geo-spatial location finder and interactive map discovery application with real-time radius filtering.",
+        "url": "https://www.tipll.co.uk/",
+        "image": "/images/projects/ifls_1.webp",
+        "technologies": [
+          "React",
+          "Google Maps API",
+          "Geolocation"
+        ],
+        "featured": false,
+        "gradient": "from-sky-500/20 via-blue-500/20 to-cyan-500/20"
+      },
+      {
+        "id": "social-listening",
+        "name": "Social Listening",
+        "category": "Social Media Scraping",
+        "description": "Advanced sentiment analysis and real-time social media conversation monitoring dashboard.",
+        "url": "https://resonancesocial.com/",
+        "image": "/images/projects/social_listening_1.webp",
+        "technologies": [
+          "React",
+          "Data Analytics",
+          "API Integration"
+        ],
+        "featured": false,
+        "gradient": "from-emerald-600/20 via-teal-600/20 to-cyan-600/20"
+      },
+      {
+        "id": "invoice-management",
+        "name": "Invoice Management",
+        "category": "React Application",
+        "description": "Multi-client enterprise billing and invoice generation platform with PDF export and audit logs.",
+        "url": null,
+        "image": "/images/projects/invoice.webp",
+        "technologies": [
+          "JavaScript",
+          "jQuery",
+          "Ajax",
+          "PHP"
+        ],
+        "featured": false,
+        "gradient": "from-gray-600/20 via-zinc-600/20 to-stone-500/20"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Leave Us Your Info",
+    "subtitle": "Looking for a dedicated front-end specialist or want to discuss a new project? Let's connect.",
+    "infoCards": [
+      {
+        "icon": "map-pin",
+        "label": "Country / City",
+        "line1": "India",
+        "line2": "Trivandrum, Kerala"
+      },
+      {
+        "icon": "mail",
+        "label": "Direct Email",
+        "line1": "akhilaravindsb@gmail.com",
+        "line2": "Typical response < 24h"
+      },
+      {
+        "icon": "phone",
+        "label": "Phone / WhatsApp",
+        "line1": "+91 94473 19357",
+        "line2": "Mon - Fri, 9am - 7pm IST"
+      },
+      {
+        "icon": "calendar",
+        "label": "Current Availability",
+        "line1": "Part-Time & Contract",
+        "line2": "Open to remote opportunities"
+      }
+    ],
+    "form": {
+      "heading": "Leave Us Your Info",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Your Full Name",
+          "type": "text",
+          "placeholder": "e.g. John Doe",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Your Email Address",
+          "type": "email",
+          "placeholder": "e.g. john@example.com",
+          "required": true
+        },
+        {
+          "subject": "subject",
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "placeholder": "e.g. Project Consultation",
+          "required": false
+        },
+        {
+          "name": "message",
+          "label": "Your Message",
+          "type": "textarea",
+          "placeholder": "Tell me about your project, timeline, or inquiries...",
+          "required": true
+        }
+      ],
+      "submitButton": "SEND MESSAGE",
+      "successMessage": "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+      "errorMessage": "Sorry, something went wrong. Please reach out directly to akhilaravindsb@gmail.com."
+    }
+  },
+  "brandLogos": [
+    {
+      "name": "Klearcom",
+      "label": "Klearcom AI"
+    },
+    {
+      "name": "ATEAM SOFT SOLUTIONS",
+      "label": "ATEAM Soft Solutions"
+    },
+    {
+      "name": "Device Driven",
+      "label": "Device Driven"
+    },
+    {
+      "name": "LabGlo",
+      "label": "LabGlo Technologies"
+    },
+    {
+      "name": "IFLScience",
+      "label": "IFLScience"
+    },
+    {
+      "name": "TIPLL",
+      "label": "TIPLL UK"
+    },
+    {
+      "name": "Twinsway",
+      "label": "Twinsway"
+    }
+  ],
+  "navigation": [
+    {
+      "id": "home",
+      "path": "/",
+      "label": "Home",
+      "icon": "home"
+    },
+    {
+      "id": "services",
+      "path": "/services",
+      "label": "Services",
+      "icon": "service"
+    },
+    {
+      "id": "education",
+      "path": "/education",
+      "label": "Education",
+      "icon": "education"
+    },
+    {
+      "id": "experience",
+      "path": "/experience",
+      "label": "Work History",
+      "icon": "briefcase"
+    },
+    {
+      "id": "portfolio",
+      "path": "/portfolio",
+      "label": "Portfolio",
+      "icon": "portfolio"
+    },
+    {
+      "id": "contact",
+      "path": "/contact",
+      "label": "Contact",
+      "icon": "mail"
+    }
+  ]
+}
