@@ -142,9 +142,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ profile, skills }) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              className="w-8 h-8 rounded-full bg-[#FFB400] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md hover:bg-[#E5A200]"
+              className="group relative w-8 h-8 rounded-full bg-[#FFB400] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md hover:bg-[#E5A200]"
             >
               <IconRenderer name={social.icon} className="w-4 h-4" />
+
+              {/* Tooltip on hover */}
+              <span
+                role="tooltip"
+                className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 pointer-events-none opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-200 bg-[#2B2B2B] text-white text-[11px] font-semibold py-1 px-2.5 rounded shadow-md whitespace-nowrap z-20"
+              >
+                {social.name}
+                <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-[#2B2B2B]" />
+              </span>
             </a>
           ))}
         </div>
