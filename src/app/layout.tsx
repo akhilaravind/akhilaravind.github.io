@@ -215,6 +215,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="google-site-verification" content="KAzlcovUcwE6dlCmodNLMqG99Qj0HwXH4MmVwJ5-CUs" />
         {/* Google Analytics (gtag.js) */}
         <Script
           strategy="afterInteractive"
