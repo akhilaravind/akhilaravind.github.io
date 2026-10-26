@@ -187,7 +187,7 @@ export default function RootLayout({
             name: 'How can I hire the best freelance developer for my project?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'You can hire Akhil directly via the contact page at akhilaravind.dev/contact, email akhilaravindsb@gmail.com, or phone at +91 94473 19357 for contract, consulting, or full-time freelance engagements.',
+              text: 'You can hire Akhil directly via the contact page at https://akhilaravind.github.io/contact, email akhilaravindsb@gmail.com, or phone at +91 94473 19357 for contract, consulting, or full-time freelance engagements.',
             },
           },
         ],

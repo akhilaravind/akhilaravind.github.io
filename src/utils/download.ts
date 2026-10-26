@@ -3,7 +3,7 @@ import { getAssetPath } from './asset';
 /**
  * Utility helper to handle reliable PDF downloading across all deployment environments:
  * - Localhost (e.g. http://localhost:3000)
- * - Custom domain (e.g. https://akhilaravind.dev)
+ * - Custom domain (e.g. https://akhilaravind.github.io)
  * - GitHub Pages root (e.g. https://akhilaravind.github.io)
  * - GitHub Pages project repository subpath (e.g. https://akhilaravind.github.io/my-profile/)
  */
