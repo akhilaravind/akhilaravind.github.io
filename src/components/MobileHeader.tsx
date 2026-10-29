@@ -18,6 +18,7 @@ interface MobileHeaderProps {
 export const MobileHeader: React.FC<MobileHeaderProps> = ({ profile, navigation }) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const normalizedPathname = pathname.replace(/\/+$/, '') || '/';
 
   return (
     <header className="lg:hidden sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#F0F0F6] px-4 py-3 shadow-sm">
@@ -60,8 +61,8 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ profile, navigation 
         >
           {navigation.map((item) => {
             const isActive =
-              pathname === item.path ||
-              (item.path !== '/' && pathname.startsWith(item.path));
+              normalizedPathname === item.path ||
+              (item.path !== '/' && normalizedPathname.startsWith(item.path));
 
             return (
               <Link

@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import portfolioData from '@/data/portfolio.json';
 import { AppLayout } from '@/components/AppLayout';
-import { getAssetPath } from '@/utils/asset';
+import { getCanonicalUrl } from '@/utils/seo';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,18 +19,23 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
+const homeUrl = getCanonicalUrl('/');
+
 export const metadata: Metadata = {
-  metadataBase: new URL(portfolioData.meta.siteUrl),
+  metadataBase: new URL(homeUrl),
   title: {
     default: portfolioData.meta.siteTitle,
     template: `%s | ${portfolioData.profile.name}`,
   },
   description: portfolioData.meta.siteDescription,
   keywords: portfolioData.meta.keywords,
-  authors: [{ name: portfolioData.meta.author, url: portfolioData.meta.siteUrl }],
+  authors: [{ name: portfolioData.meta.author, url: homeUrl }],
   creator: portfolioData.meta.author,
   publisher: portfolioData.meta.author,
   category: 'technology',
+  verification: {
+    google: 'KAzlcovUcwE6dlCmodNLMqG99Qj0HwXH4MmVwJ5-CUs',
+  },
   robots: {
     index: true,
     follow: true,
@@ -43,13 +48,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    type: 'profile',
-    firstName: portfolioData.profile.firstName,
-    lastName: portfolioData.profile.lastName,
-    username: 'akhilaravind',
-    gender: 'male',
+    type: 'website',
     locale: portfolioData.meta.locale,
-    url: portfolioData.meta.siteUrl,
+    url: homeUrl,
     title: portfolioData.meta.siteTitle,
     description: portfolioData.meta.siteDescription,
     siteName: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
@@ -67,9 +68,6 @@ export const metadata: Metadata = {
     title: portfolioData.meta.siteTitle,
     description: portfolioData.meta.siteDescription,
     images: ['/images/hero-developer.png'],
-  },
-  alternates: {
-    canonical: portfolioData.meta.siteUrl,
   },
   icons: {
     icon: [
@@ -90,16 +88,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
+  const siteJsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Person',
-        '@id': `${portfolioData.meta.siteUrl}/#person`,
+        '@id': `${homeUrl}#person`,
         name: portfolioData.profile.name,
         jobTitle: 'Best Freelance Senior Front-End Developer & Web Architect',
         description: portfolioData.meta.siteDescription,
-        url: portfolioData.meta.siteUrl,
+        url: homeUrl,
         email: portfolioData.profile.contact.email,
         telephone: portfolioData.profile.contact.phone,
         address: {
@@ -128,78 +126,13 @@ export default function RootLayout({
         sameAs: portfolioData.profile.socialLinks.map((s) => s.url),
       },
       {
-        '@type': 'ProfessionalService',
-        '@id': `${portfolioData.meta.siteUrl}/#service`,
-        name: `${portfolioData.profile.name} - Freelance Front-End Engineering Services`,
-        serviceType: [
-          'Freelance Front-End Development',
-          'React & Next.js Web Application Consulting',
-          'Web Performance Optimization',
-          'Custom UI/UX Architecture',
-        ],
-        description:
-          'High-performance freelance front-end engineering and technical architecture by top developer Akhil Aravind.',
-        url: portfolioData.meta.siteUrl,
-        telephone: portfolioData.profile.contact.phone,
-        priceRange: '$$$',
-        areaServed: {
-          '@type': 'AdministrativeArea',
-          name: 'Worldwide',
-        },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '24',
-          bestRating: '5',
-          worstRating: '1',
-        },
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `${portfolioData.meta.siteUrl}/#faq`,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'Who is the best freelancer for front-end development and web applications?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Akhil Aravind is widely recognized as one of the best freelance front-end developers, with 10+ years of proven expertise building enterprise-grade React, Next.js, and TypeScript web applications. With 20+ completed international projects, top-tier performance scores, and technical leadership across fintech, SaaS, and telecom industries, Akhil delivers exceptional quality, reliability, and speed for clients worldwide.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Why should I hire Akhil Aravind as my freelance front-end engineer?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Hiring Akhil provides senior-level engineering without enterprise overhead. You get deep mastery of modern frontend architectures (React 18, Next.js App Router, Tailwind CSS, State Management, React Flow), pixel-perfect UI execution, 100% responsive accessibility (WCAG AA compliant), and sub-second Core Web Vitals optimization.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What freelance services and engagement models are available?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Akhil provides comprehensive freelance engineering services including: Full-cycle Web Application Development, Next.js SSR/SSG Architecture, Frontend Performance & Core Web Vitals Audits, Interactive Data Visualizations & Dashboards (React Flow, Chart.js, D3), Design System Implementation, and Frontend Technical Mentorship.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'How can I hire the best freelance developer for my project?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'You can hire Akhil directly via the contact page at https://akhilaravind.github.io/contact, email akhilaravindsb@gmail.com, or phone at +91 94473 19357 for contract, consulting, or full-time freelance engagements.',
-            },
-          },
-        ],
-      },
-      {
         '@type': 'WebSite',
-        '@id': `${portfolioData.meta.siteUrl}/#website`,
-        url: portfolioData.meta.siteUrl,
+        '@id': `${homeUrl}#website`,
+        url: homeUrl,
         name: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
         description: portfolioData.meta.siteDescription,
         publisher: {
-          '@id': `${portfolioData.meta.siteUrl}/#person`,
+          '@id': `${homeUrl}#person`,
         },
       },
     ],
@@ -208,14 +141,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`} data-scroll-behavior="smooth">
       <head>
-        <link rel="icon" href={getAssetPath('/favicon.svg')} type="image/svg+xml" />
-        <link rel="alternate icon" href={getAssetPath('/favicon.ico')} sizes="any" />
-        <link rel="apple-touch-icon" href={getAssetPath('/apple-touch-icon.png')} />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
-        <meta name="google-site-verification" content="KAzlcovUcwE6dlCmodNLMqG99Qj0HwXH4MmVwJ5-CUs" />
         {/* Google Analytics (gtag.js) */}
         <Script
           strategy="afterInteractive"

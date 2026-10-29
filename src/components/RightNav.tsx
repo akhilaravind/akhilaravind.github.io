@@ -15,7 +15,8 @@ interface RightNavProps {
 
 export const RightNav: React.FC<RightNavProps> = ({ items, cvUrl = '/Akhil%20Aravind.pdf' }) => {
   const pathname = usePathname();
-  const isHome = pathname === '/';
+  const normalizedPathname = pathname.replace(/\/+$/, '') || '/';
+  const isHome = normalizedPathname === '/';
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -29,8 +30,8 @@ export const RightNav: React.FC<RightNavProps> = ({ items, cvUrl = '/Akhil%20Ara
       <div className="flex flex-col gap-3.5">
         {items.map((item) => {
           const isActive =
-            pathname === item.path ||
-            (item.path !== '/' && pathname.startsWith(item.path));
+            normalizedPathname === item.path ||
+            (item.path !== '/' && normalizedPathname.startsWith(item.path));
 
           return (
             <Link

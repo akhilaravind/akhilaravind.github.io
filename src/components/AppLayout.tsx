@@ -37,7 +37,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
             <div className="flex-1 flex flex-col gap-4">
               {children}
             </div>
-            <Footer name={data.profile.name} />
+            <Footer name={data.profile.name} navigation={data.navigation} />
           </main>
 
           {/* Right Floating Quick Nav Dock with real routes */}
