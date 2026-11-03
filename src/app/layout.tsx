@@ -98,8 +98,10 @@ export default function RootLayout({
   const personJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': `${SITE_URL}/#person`,
     name: 'Akhil Aravind',
-    url: 'https://akhilaravind.in',
+    url: `${SITE_URL}/`,
+    image: `${SITE_URL}/images/profile.webp`,
     jobTitle: 'Freelance Front-End & Next.js Engineer',
     description:
       'Senior Freelance React & Next.js Developer specializing in scalable web applications, UI architecture, and high-performance frontend engineering. Available for hire and contract roles.',
