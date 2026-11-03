@@ -90,41 +90,6 @@ export default function HomePage() {
           worstRating: '1',
         },
       },
-      {
-        '@type': 'ProfilePage',
-        '@id': `${homeUrl}#profilepage`,
-        url: homeUrl,
-        name: data.meta.siteTitle,
-        description: data.meta.siteDescription,
-        mainEntity: {
-          '@type': 'Person',
-          '@id': `${homeUrl}#person`,
-          name: data.profile.name,
-          alternateName: `${data.profile.firstName} ${data.profile.lastName}`,
-          description: data.meta.siteDescription,
-          url: homeUrl,
-          image: `${homeUrl}images/profile.webp`,
-          jobTitle: 'Freelance Front-End & Next.js Engineer',
-          sameAs: [
-            'https://github.com/akhilaravind',
-            'https://www.linkedin.com/in/akhilaravind',
-          ],
-          knowsAbout: [
-            'React.js',
-            'Next.js',
-            'TypeScript',
-            'Tailwind CSS',
-            'Frontend Architecture',
-            'Web Performance',
-          ],
-        },
-        isPartOf: {
-          '@type': 'WebSite',
-          '@id': `${homeUrl}#website`,
-          url: homeUrl,
-          name: data.meta.siteTitle,
-        },
-      },
     ],
   };
 
