@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import portfolioJson from '@/data/portfolio.json';
 import { FullPortfolioSchema } from '@/types/portfolio';
 import { ServicesSection } from '@/components/ServicesSection';
-import { FaqSection } from '@/components/FaqSection';
 import { createBreadcrumbJsonLd, createPageMetadata } from '@/utils/seo';
 
 export const metadata: Metadata = createPageMetadata({
@@ -36,9 +35,6 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ServicesSection services={data.services} headingTag="h1" />
-      <div className="mt-8">
-        <FaqSection />
-      </div>
     </>
   );
 }

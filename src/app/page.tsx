@@ -7,8 +7,6 @@ import { ServicesSection } from '@/components/ServicesSection';
 import { EducationSection } from '@/components/EducationSection';
 import { ExperienceSection } from '@/components/ExperienceSection';
 import { PortfolioSection } from '@/components/PortfolioSection';
-import { FaqSection } from '@/components/FaqSection';
-import { FAQ_DATA } from '@/data/faq';
 import { ContactSection } from '@/components/ContactSection';
 import { createPageMetadata, getCanonicalUrl } from '@/utils/seo';
 
@@ -93,18 +91,6 @@ export default function HomePage() {
         },
       },
       {
-        '@type': 'FAQPage',
-        '@id': `${homeUrl}#faq`,
-        mainEntity: FAQ_DATA.map((item) => ({
-          '@type': 'Question',
-          name: item.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.answer,
-          },
-        })),
-      },
-      {
         '@type': 'ProfilePage',
         '@id': `${homeUrl}#profilepage`,
         url: homeUrl,
@@ -131,7 +117,6 @@ export default function HomePage() {
       <EducationSection education={data.education} />
       <ExperienceSection experience={data.experience} />
       <PortfolioSection portfolio={data.portfolio} />
-      <FaqSection />
       <ContactSection contact={data.contact} />
     </>
   );
