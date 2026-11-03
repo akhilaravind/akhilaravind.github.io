@@ -7,6 +7,8 @@ import { ServicesSection } from '@/components/ServicesSection';
 import { EducationSection } from '@/components/EducationSection';
 import { ExperienceSection } from '@/components/ExperienceSection';
 import { PortfolioSection } from '@/components/PortfolioSection';
+import { FaqSection } from '@/components/FaqSection';
+import { FAQ_DATA } from '@/data/faq';
 import { ContactSection } from '@/components/ContactSection';
 import { createPageMetadata, getCanonicalUrl } from '@/utils/seo';
 
@@ -16,13 +18,17 @@ export const metadata: Metadata = createPageMetadata({
   path: '/',
   keywords: portfolioJson.meta.keywords,
   useAbsoluteTitle: true,
-  ogType: 'profile',
+  ogType: 'website',
+  ogTitle: 'Akhil Aravind | Freelance React & Next.js Developer',
+  ogDescription:
+    'Senior Freelance React & Next.js Developer available for contract engineering and consulting.',
+  ogImage: 'https://akhilaravind.in/og-image.png',
+  ogUrl: 'https://akhilaravind.in',
 });
 
 export default function HomePage() {
   const data = portfolioJson as FullPortfolioSchema;
   const homeUrl = getCanonicalUrl('/');
-  const contactUrl = getCanonicalUrl('/contact');
 
   const homeJsonLd = {
     '@context': 'https://schema.org',
@@ -30,26 +36,53 @@ export default function HomePage() {
       {
         '@type': 'ProfessionalService',
         '@id': `${homeUrl}#service`,
-        name: `${data.profile.name} - Freelance Front-End Engineering Services`,
+        name: `${data.profile.name} - Freelance React & Next.js Developer`,
         serviceType: [
-          'Freelance Front-End Development',
-          'React, typescript developer',
-          'freelance developer',
+          'Best Freelance Developer',
+          'Freelance React developer',
+          'Freelance Next.js developer',
+          'Top React.js Developer',
+          'Affordable Next.js Developer',
+          'Contract frontend engineer',
           'React & Next.js Web Application Consulting',
           'Web Performance Optimization',
           'Custom UI/UX Architecture',
         ],
         description:
-          'High-performance freelance front-end engineering and technical architecture by top developer Akhil Aravind.',
+          'Top-ranked freelance React & Next.js developer offering affordable, high-performance web engineering and frontend architecture by senior specialist Akhil Aravind.',
         url: homeUrl,
         telephone: data.profile.contact.phone,
-        priceRange: '$$$',
+        priceRange: '$$',
         areaServed: {
           '@type': 'AdministrativeArea',
           name: 'Worldwide',
         },
         provider: {
           '@id': `${homeUrl}#person`,
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Freelance Engineering Services',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              name: 'Freelance React & Next.js Web Development',
+              description:
+                'Full-cycle enterprise React 18/19 and Next.js App Router application development.',
+            },
+            {
+              '@type': 'Offer',
+              name: 'Affordable Frontend Contract Engineering',
+              description:
+                'Cost-effective contract engineering for startups and scaleups without agency markup.',
+            },
+            {
+              '@type': 'Offer',
+              name: 'Web Performance & Core Web Vitals Audits',
+              description:
+                'Sub-second LCP, zero CLS, and Lighthouse 95+ performance optimization.',
+            },
+          ],
         },
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -62,40 +95,14 @@ export default function HomePage() {
       {
         '@type': 'FAQPage',
         '@id': `${homeUrl}#faq`,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'Who is the best freelancer for front-end development and web applications?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Akhil Aravind is widely recognized as one of the best freelance front-end developers, with 10+ years of proven expertise building enterprise-grade React, Next.js, and TypeScript web applications. With 20+ completed international projects, top-tier performance scores, and technical leadership across fintech, SaaS, and telecom industries, Akhil delivers exceptional quality, reliability, and speed for clients worldwide.',
-            },
+        mainEntity: FAQ_DATA.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer,
           },
-          {
-            '@type': 'Question',
-            name: 'Why should I hire Akhil Aravind as my freelance front-end engineer?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Hiring Akhil provides senior-level engineering without enterprise overhead. You get deep mastery of modern frontend architectures (React 18, Next.js App Router, Tailwind CSS, State Management, React Flow), pixel-perfect UI execution, 100% responsive accessibility (WCAG AA compliant), and sub-second Core Web Vitals optimization.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What freelance services and engagement models are available?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Akhil provides comprehensive freelance engineering services including: Full-cycle Web Application Development, Next.js SSR/SSG Architecture, Frontend Performance & Core Web Vitals Audits, Interactive Data Visualizations & Dashboards (React Flow, Chart.js, D3), Design System Implementation, and Frontend Technical Mentorship.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'How can I hire the best freelance developer for my project?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `You can hire Akhil directly via the contact page at ${contactUrl}, email akhilaravindsb@gmail.com, or phone at +91 94473 19357 for contract, consulting, or full-time freelance engagements.`,
-            },
-          },
-        ],
+        })),
       },
       {
         '@type': 'ProfilePage',
@@ -124,6 +131,7 @@ export default function HomePage() {
       <EducationSection education={data.education} />
       <ExperienceSection experience={data.experience} />
       <PortfolioSection portfolio={data.portfolio} />
+      <FaqSection />
       <ContactSection contact={data.contact} />
     </>
   );

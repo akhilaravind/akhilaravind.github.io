@@ -11,7 +11,9 @@ export const metadata: Metadata = createPageMetadata({
     '10+ years of enterprise and freelance front-end engineering experience across global fintech, telecom, SaaS, and analytics applications by Akhil Aravind.',
   path: '/experience',
   keywords: [
-    'best freelancer portfolio',
+    'Freelance React developer',
+    'Freelance Next.js developer',
+    'Contract frontend engineer',
     'senior frontend developer experience',
     'React lead developer',
     'hire freelance engineer',

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import portfolioData from '@/data/portfolio.json';
 
-const rawSiteUrl = portfolioData.meta.siteUrl.replace(/\/+$/, '');
+const rawSiteUrl = (portfolioData.meta.siteUrl || 'https://akhilaravind.in').replace(/\/+$/, '');
+const DEFAULT_OG_IMAGE = 'https://akhilaravind.in/og-image.png';
 
 /**
  * Builds the canonical URL for a route, matching `trailingSlash: true` on GitHub Pages
@@ -25,6 +26,10 @@ interface PageMetadataOptions {
   keywords?: string[];
   useAbsoluteTitle?: boolean;
   ogType?: 'website' | 'profile';
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
 }
 
 export function createPageMetadata({
@@ -34,11 +39,19 @@ export function createPageMetadata({
   keywords,
   useAbsoluteTitle = false,
   ogType = 'website',
+  ogTitle,
+  ogDescription,
+  ogImage = DEFAULT_OG_IMAGE,
+  ogUrl,
 }: PageMetadataOptions): Metadata {
   const canonicalUrl = getCanonicalUrl(path);
   const fullTitle = useAbsoluteTitle
     ? title
     : `${title} | ${portfolioData.profile.name}`;
+
+  const resolvedOgUrl = ogUrl || (path === '/' ? rawSiteUrl : canonicalUrl);
+  const resolvedOgTitle = ogTitle || fullTitle;
+  const resolvedOgDesc = ogDescription || description;
 
   return {
     title: useAbsoluteTitle ? { absolute: title } : title,
@@ -58,24 +71,24 @@ export function createPageMetadata({
           }
         : {}),
       locale: portfolioData.meta.locale,
-      url: canonicalUrl,
-      title: fullTitle,
-      description,
-      siteName: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
+      url: resolvedOgUrl,
+      title: resolvedOgTitle,
+      description: resolvedOgDesc,
+      siteName: portfolioData.meta.siteTitle,
       images: [
         {
-          url: '/images/hero-developer.png',
+          url: ogImage,
           width: 1200,
           height: 630,
-          alt: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
+          alt: resolvedOgTitle,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
-      description,
-      images: ['/images/hero-developer.png'],
+      title: resolvedOgTitle,
+      description: resolvedOgDesc,
+      images: [ogImage],
     },
   };
 }

@@ -6,16 +6,21 @@ import { PortfolioSection } from '@/components/PortfolioSection';
 import { createBreadcrumbJsonLd, createPageMetadata } from '@/utils/seo';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Client Work & Production Web Apps',
+  title: 'React & Next.js Production Projects | Best Freelance Developer Portfolio',
   description:
-    'Explore production web applications, interactive visual flow builders, React Dashboards, and design systems built by top freelance developer Akhil Aravind.',
+    'Explore 20+ production web applications, interactive visual node builders (React Flow), enterprise Next.js dashboards, and design systems built by top freelance developer Akhil Aravind.',
   path: '/portfolio',
   keywords: [
-    'best freelancer projects',
+    'best freelance developer',
+    'top reactjs developer',
+    'affordable nextjs developer',
+    'Freelance React developer',
+    'Freelance Next.js developer',
+    'Contract frontend engineer',
     'front end developer portfolio',
     'React projects',
     'Next.js applications',
-    'hire top freelance developer',
+    'hire freelance developer',
   ],
 });
 

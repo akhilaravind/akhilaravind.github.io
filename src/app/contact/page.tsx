@@ -6,15 +6,21 @@ import { ContactSection } from '@/components/ContactSection';
 import { createBreadcrumbJsonLd, createPageMetadata } from '@/utils/seo';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Hire Freelance Front-End Developer | Contact',
+  title: 'Hire Best Freelance React & Next.js Developer | Contact',
   description:
-    'Looking to hire the best freelancer for your front-end development project? Contact Akhil Aravind for contract, consulting, and full-stack front-end engineering engagements.',
+    'Looking to hire a top-rated, affordable freelance React and Next.js developer? Contact Akhil Aravind for contract, consulting, and staff-level frontend engineering.',
   path: '/contact',
   keywords: [
-    'hire best freelancer',
+    'best freelance developer',
+    'top reactjs developer',
+    'affordable nextjs developer',
+    'Freelance React developer',
+    'Freelance Next.js developer',
+    'Contract frontend engineer',
+    'hire React developer',
+    'hire Next.js developer',
     'contact freelance developer',
     'hire front end developer',
-    'hire React developer',
     'freelance web engineer contact',
   ],
 });

@@ -19,19 +19,24 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const homeUrl = getCanonicalUrl('/');
+const SITE_URL = 'https://akhilaravind.in';
+const OG_IMAGE_URL = 'https://akhilaravind.in/og-image.png';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(homeUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: portfolioData.meta.siteTitle,
+    default: 'Akhil Aravind | Freelance React & Next.js Developer',
     template: `%s | ${portfolioData.profile.name}`,
   },
-  description: portfolioData.meta.siteDescription,
+  description:
+    'Senior Freelance React & Next.js Developer specializing in scalable web applications, UI architecture, and high-performance frontend engineering. Available for hire and contract roles.',
   keywords: portfolioData.meta.keywords,
-  authors: [{ name: portfolioData.meta.author, url: homeUrl }],
-  creator: portfolioData.meta.author,
-  publisher: portfolioData.meta.author,
+  authors: [{ name: portfolioData.profile.name, url: SITE_URL }],
+  creator: portfolioData.profile.name,
+  publisher: portfolioData.profile.name,
+  alternates: {
+    canonical: `${SITE_URL}/`,
+  },
   category: 'technology',
   verification: {
     google: 'KAzlcovUcwE6dlCmodNLMqG99Qj0HwXH4MmVwJ5-CUs',
@@ -50,24 +55,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: portfolioData.meta.locale,
-    url: homeUrl,
-    title: portfolioData.meta.siteTitle,
-    description: portfolioData.meta.siteDescription,
-    siteName: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
+    url: SITE_URL,
+    title: 'Akhil Aravind | Freelance React & Next.js Developer',
+    description:
+      'Senior Freelance React & Next.js Developer available for contract engineering and consulting.',
+    siteName: 'Akhil Aravind | Freelance React & Next.js Developer',
     images: [
       {
-        url: '/images/hero-developer.png',
+        url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
-        alt: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
+        alt: 'Akhil Aravind | Freelance React & Next.js Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: portfolioData.meta.siteTitle,
-    description: portfolioData.meta.siteDescription,
-    images: ['/images/hero-developer.png'],
+    title: 'Akhil Aravind | Freelance React & Next.js Developer',
+    description:
+      'Senior Freelance React & Next.js Developer available for contract engineering and consulting.',
+    images: [OG_IMAGE_URL],
   },
   icons: {
     icon: [
@@ -88,54 +95,62 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const siteJsonLd = {
+  const personJsonLd = {
     '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Person',
-        '@id': `${homeUrl}#person`,
-        name: portfolioData.profile.name,
-        jobTitle: 'Best Freelance Senior Front-End Developer & Web Architect',
-        description: portfolioData.meta.siteDescription,
-        url: homeUrl,
-        email: portfolioData.profile.contact.email,
-        telephone: portfolioData.profile.contact.phone,
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: portfolioData.profile.location.city,
-          addressRegion: portfolioData.profile.location.region,
-          addressCountry: portfolioData.profile.location.country,
-        },
-        knowsAbout: [
-          'Front-End Web Development',
-          'Freelance Software Engineering',
-          'React.js Architecture',
-          'Next.js Fullstack',
-          'TypeScript',
-          'Web Performance & Core Web Vitals',
-          'UI/UX Engineering',
-          'State Management',
-          'Interactive Data Visualizations',
-        ],
-        award: [
-          'Top Rated Plus Freelance Front-End Engineer',
-          '10+ Years Professional Web Engineering Excellence',
-          '20+ Enterprise Projects Successfully Delivered',
-        ],
-        alumniOf: 'College of Engineering, Attingal',
-        sameAs: portfolioData.profile.socialLinks.map((s) => s.url),
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${homeUrl}#website`,
-        url: homeUrl,
-        name: `${portfolioData.profile.name} - Best Freelance Front-End Developer`,
-        description: portfolioData.meta.siteDescription,
-        publisher: {
-          '@id': `${homeUrl}#person`,
-        },
-      },
+    '@type': 'Person',
+    name: 'Akhil Aravind',
+    url: 'https://akhilaravind.in',
+    jobTitle: 'Freelance Front-End & Next.js Engineer',
+    description:
+      'Senior Freelance React & Next.js Developer specializing in scalable web applications, UI architecture, and high-performance frontend engineering. Available for hire and contract roles.',
+    sameAs: [
+      'https://github.com/akhilaravind',
+      'https://www.linkedin.com/in/akhilaravind',
     ],
+    knowsAbout: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Frontend Architecture',
+      'Web Performance',
+      'Core Web Vitals',
+      'React Flow',
+    ],
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: 'Senior Freelance React & Next.js Developer',
+      occupationLocation: {
+        '@type': 'Country',
+        name: 'Worldwide',
+      },
+      skills:
+        'React.js, Next.js App Router, TypeScript, Tailwind CSS, Frontend Architecture, Core Web Vitals Optimization',
+    },
+    award: [
+      'Top Rated Freelance React & Next.js Engineer',
+      '10+ Years Professional Web Engineering Excellence',
+      '20+ Enterprise Projects Successfully Delivered',
+    ],
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'College of Engineering, Attingal',
+    },
+  };
+
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: `${SITE_URL}/`,
+    name: 'Akhil Aravind | Freelance React & Next.js Developer',
+    description:
+      'Senior Freelance React & Next.js Developer specializing in scalable web applications, UI architecture, and high-performance frontend engineering. Available for hire and contract roles.',
+    publisher: {
+      '@type': 'Person',
+      name: 'Akhil Aravind',
+      url: SITE_URL,
+    },
   };
 
   return (
@@ -143,7 +158,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         {/* Google Analytics (gtag.js) */}
         <Script

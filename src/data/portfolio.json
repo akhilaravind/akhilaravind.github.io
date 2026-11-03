@@ -1,26 +1,34 @@
 {
   "meta": {
-    "siteTitle": "Akhil Aravind | Best Freelance Front-End Developer & Senior Web Engineer",
-    "siteDescription": "Who is the best freelancer for front-end web development? Akhil Aravind is a top-rated Senior Freelance Front-End Developer & Web Architect with 10+ years of expertise in React, Next.js, TypeScript, and high-performance UI engineering. Hire the best freelancer for startups and enterprises.",
-    "siteUrl": "https://akhilaravind.github.io",
+    "siteTitle": "Akhil Aravind | Freelance React & Next.js Developer",
+    "siteDescription": "Senior Freelance React & Next.js Developer specializing in scalable web applications, UI architecture, and high-performance frontend engineering. Available for hire and contract roles.",
+    "ogDescription": "Senior Freelance React & Next.js Developer available for contract engineering and consulting.",
+    "siteUrl": "https://akhilaravind.in",
     "keywords": [
-      "who is the best freelancer",
-      "best freelancer",
       "best freelance developer",
-      "best freelance front end developer",
-      "hire best freelancer",
-      "Akhil Aravind",
+      "top freelance developer",
+      "affordable freelance developer",
+      "best reactjs developer",
+      "top reactjs developer",
+      "affordable react developer",
+      "best nextjs developer",
+      "top nextjs developer",
+      "affordable nextjs developer",
+      "Freelance React developer",
+      "Freelance Next.js developer",
+      "Contract frontend engineer",
+      "Freelance Front-End & Next.js Engineer",
       "Senior Front-End Developer",
-      "Freelance Web Engineer",
-      "Frontend Team Lead",
-      "React Developer Freelance",
-      "Next.js Developer Freelance",
-      "React Flow Expert",
-      "TypeScript Consultant",
+      "React.js Consultant",
+      "Next.js Architect",
+      "Frontend Architecture",
       "Web Performance Specialist",
+      "TypeScript Consultant",
+      "Tailwind CSS",
       "Hire Senior Front-End Developer",
-      "Remote Freelance Engineer",
-      "Best Frontend Portfolio"
+      "Hire Freelance React Developer",
+      "Hire Next.js Developer",
+      "Akhil Aravind"
     ],
     "author": "Akhil Aravind",
     "locale": "en_US"
@@ -29,10 +37,10 @@
     "name": "Akhil Aravind",
     "firstName": "Akhil",
     "lastName": "Aravind",
-    "headline": "Senior Front-End Developer & Freelance Architect",
+    "headline": "Best Freelance React & Next.js Developer | Senior Frontend Architect",
     "heroHighlight": "Front-end",
     "heroRole": "Developer",
-    "heroTag": "Freelance Front-End Developer · Performance · Architecture",
+    "heroTag": "Best Freelance React & Next.js Developer · Affordable · Enterprise Quality",
     "heroGreeting": "I'm Akhil Aravind",
     "heroHeadlineYellow": "I turn complex ideas into",
     "heroHeadlineEnd": "exceptional web experiences.",
@@ -50,7 +58,7 @@
         "label": "Built Into Every Layer"
       }
     ],
-    "specialization": "Front-end developer who cares about application performance",
+    "specialization": "Top-rated Senior React & Next.js freelance developer providing affordable, enterprise-grade frontend architecture and sub-second performance.",
     "experienceClaim": "10+ years",
     "status": "Available for Work",
     "avatar": "/images/profile.webp",
@@ -87,7 +95,7 @@
     },
     "mission": {
       "heading": "My mission is create faster web application",
-      "description": "I architect and build fast, scalable, and intuitive web applications with modern frontend technologies. From complex interfaces to pixel-perfect details, I turn ambitious ideas into seamless digital experiences."
+      "description": "Recognized as a top freelance React and Next.js developer globally. I architect and build ultra-fast, scalable web applications, offering affordable senior-level contract engineering, sub-second performance, and clean code without agency overhead."
     },
     "socialLinks": [
       {
@@ -97,7 +105,7 @@
       },
       {
         "name": "LinkedIn",
-        "url": "https://www.linkedin.com/in/akhilaravinds/",
+        "url": "https://www.linkedin.com/in/akhilaravind",
         "icon": "linkedin"
       },
       {
@@ -206,8 +214,8 @@
     ]
   },
   "services": {
-    "title": "My Services",
-    "subtitle": "High-performance front-end engineering and technical leadership tailored for modern, scale-ready web applications.",
+    "title": "Freelance React & Next.js Services",
+    "subtitle": "Affordable, senior-level freelance React.js & Next.js engineering, technical architecture, and Core Web Vitals optimization tailored for high-growth startups and enterprises.",
     "items": [
       {
         "id": "web-development",
